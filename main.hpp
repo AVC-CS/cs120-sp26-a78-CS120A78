@@ -19,17 +19,6 @@ void printout(int[][10], int);
 int findcross(int M[][10])
 {
     // TODO: scan every cell. If M[i][j]==1 and all four orthogonal neighbors
-    //       are also 1, count it as a cross. Return the total count.
-    int cnt = 0;
-    for (int i = 0; i < 10; i++)
-        for (int j = 0; j < 10; j++)
-            if (M[i][j] == 1)
-            {
-                if (checkup(M, i, j) && checkdown(M, i, j) && checkleft(M, i, j) && checkright(M, i, j))
-                {
-                    cout << "Found cross center " << i << "," << j << endl;
-                    M[i][j] = 8;
-                    cnt++;
                 }
             }
     return cnt;
