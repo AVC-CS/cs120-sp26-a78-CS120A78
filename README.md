@@ -24,7 +24,7 @@ Implementation Hint
 
 | Function: int findcross(int M[][10]) |
 |---|
-| • A cross is centered at (i, j) where M[i][j] == 1 AND each of the four orthogonal neighbors equals 1: M[i-1][j], M[i+1][j], M[i][j-1], M[i][j+1].<br>• Cross centers cannot be on the borders (row 0, row 9, column 0, column 9) — there is no neighbor on that side.<br>• Provided helpers: checkup, checkdown, checkleft, checkright. Use them to test each direction.<br>• Return the total number of crosses found. |
+| • A cross is centered at (i, j) where M[i][j] == 1 AND each of the four orthogonal neighbors equals 1: M[i-1][j], M[i+1][j], M[i][j-1], M[i][j+1].<br>• Cross centers cannot be on the borders (row 0, row 9, column 0, column 9) — there is no neighbor on that side, so guard your indices.<br>• Return the total number of crosses found. You may write helper functions or do everything inline — your choice. |
 
 **How to compile and run your program:**
 
