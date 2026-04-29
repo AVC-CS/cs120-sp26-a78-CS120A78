@@ -10,39 +10,12 @@
 using namespace std;
 
 int findcross(int[][10]);
-bool checkup(int[][10], int, int);
-bool checkdown(int[][10], int, int);
-bool checkleft(int[][10], int, int);
-bool checkright(int[][10], int, int);
 void printout(int[][10], int);
 
 int findcross(int M[][10])
 {
     // TODO: scan every cell. If M[i][j]==1 and all four orthogonal neighbors
-}
-
-bool checkup(int M[][10], int i, int j)
-{
-    if (i == 0) return false;
-    return M[i - 1][j] == 1;
-}
-
-bool checkdown(int M[][10], int i, int j)
-{
-    if (i == 9) return false;
-    return M[i + 1][j] == 1;
-}
-
-bool checkleft(int M[][10], int i, int j)
-{
-    if (j == 0) return false;
-    return M[i][j - 1] == 1;
-}
-
-bool checkright(int M[][10], int i, int j)
-{
-    if (j == 9) return false;
-    return M[i][j + 1] == 1;
+    //       are also 1, count it as a cross. Return the total count.
 }
 
 void printout(int M[][10], int cnt)
